@@ -3,7 +3,7 @@ import SimpleVideoPlayer from './SimpleVideoPlayer.jsx';
 
 function App() {
   const [count, setCount] = useState(0);
-  const temp_video = "https://pub-a919e0e7442047299d7072ac1b2ab5d0.r2.dev/video.mp4";
+  const temp_video = "https://videos.pexels.com/video-files/5924381/5924381-hd_1080_1920_30fps.mp4";
 
   return (
     <div className="p-4">
@@ -23,7 +23,7 @@ function App() {
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
 
       {/* Render the video player */}
-      <SimpleVideoPlayer videoSrc={temp_video} />
+      <SimpleVideoPlayer publicId={temp_video} />
     </div>
   );
 }
